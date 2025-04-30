@@ -1,0 +1,9 @@
+import heapq
+elements = [20, 30, 3, 45, 6, 78, 9, 2]
+min_heap = []
+for i in elements:
+    heapq.heappush(min_heap, i)
+print("Heap structure:", min_heap)
+print("Sorted order:", end=" ")
+while min_heap:
+    print(heapq.heappop(min_heap), end=" ")
